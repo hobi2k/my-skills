@@ -24,6 +24,8 @@ Claude Code와 Codex에서 사용할 수 있는 커스텀 스킬 모음입니다
 
 `hobi2k/skills` 기준 Claude/Codex 통합 가이드는 [HOBI2K_SKILLS_GUIDE.md](./HOBI2K_SKILLS_GUIDE.md)에서 볼 수 있습니다.
 
+실전 사용 예시 중심 문서는 [SKILL_USAGE_GUIDE.md](./SKILL_USAGE_GUIDE.md)에서 볼 수 있습니다.
+
 ### Claude Code
 
 ```bash
