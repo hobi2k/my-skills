@@ -75,6 +75,32 @@ Codex 전용 문서:
 | **Junior Dev Spec Coach** | 방향성·기능·명세만 주고 주니어가 직접 구현하게 만드는 코치형 스킬 | `/plugin marketplace install suji-father-marketplace@junior-dev-spec-coach` |
 | **Junior Dev Review Mode** | 주니어가 작성한 코드를 정답 공개보다 교육적 리뷰 중심으로 피드백하는 스킬 | `/plugin marketplace install suji-father-marketplace@junior-dev-review-mode` |
 | **Junior Dev Orchestrator** | 상황에 맞게 교육 모드를 선택하고 다음 단계까지 제안하는 상위 메타 스킬 | `/plugin marketplace install suji-father-marketplace@junior-dev-orchestrator` |
+| **Junior Dev Work Order** | AI는 구현하지 않고 주니어가 직접 수행할 실무 작업지시서 markdown을 생성 | `/plugin marketplace install suji-father-marketplace@junior-dev-work-order` |
+| **Junior Dev Code Assignment** | 명령어와 코드 조각까지 포함한 hands-on 과제를 markdown으로 작성 | `/plugin marketplace install suji-father-marketplace@junior-dev-code-assignment` |
+| **Junior Dev Spec Assignment** | 최종 코드는 주지 않고 스펙과 완료 조건만 적은 구현 과제를 작성 | `/plugin marketplace install suji-father-marketplace@junior-dev-spec-assignment` |
+| **Junior Dev Env Task Sheet** | 설치·실행·검증을 주니어가 직접 수행할 수 있게 환경 세팅 작업지를 작성 | `/plugin marketplace install suji-father-marketplace@junior-dev-env-task-sheet` |
+| **Junior Dev Bugfix Brief** | 재현 방법, 의심 파일, 디버깅 포인트가 담긴 버그 수정 브리프를 작성 | `/plugin marketplace install suji-father-marketplace@junior-dev-bugfix-brief` |
+| **Junior Dev Refactor Ticket** | 동작 보존을 전제로 구조 개선 작업을 주니어에게 넘길 리팩터링 티켓을 작성 | `/plugin marketplace install suji-father-marketplace@junior-dev-refactor-ticket` |
+| **Junior Dev Test Task** | 테스트 대상과 시나리오를 정리해 주니어가 직접 테스트를 구현하게 하는 과제 | `/plugin marketplace install suji-father-marketplace@junior-dev-test-task` |
+
+### 로컬 LLM 전용 별도 폴더
+
+로컬 LLM 및 claw-code용으로는 전체 스킬 트리를 별도 루트 폴더인 [.local/skills](/home/hosung/pytorch-demo/my-skills/.local/skills) 아래에 둡니다. `skills/`의 전체 내용을 그대로 미러링해서, `.local/skills`만 따로 떼어도 전체 스킬 셋을 독립적으로 사용할 수 있게 구성합니다.
+
+주니어 위임형 스킬들은 공용 `reference-pack`에 기대지 않고, 각 스킬 폴더 안의 `references/` 디렉터리를 직접 읽도록 구성합니다. 즉 스킬 하나만 복사해도 필요한 언어별 참고 문서가 같이 따라가도록 맞춥니다.
+
+예시:
+
+- `.local/skills/junior-dev-work-order`
+- `.local/skills/junior-dev-code-assignment`
+- `.local/skills/junior-dev-spec-assignment`
+- `.local/skills/junior-dev-env-task-sheet`
+- `.local/skills/junior-dev-bugfix-brief`
+- `.local/skills/junior-dev-refactor-ticket`
+- `.local/skills/junior-dev-test-task`
+- `.local/skills/junior-dev-orchestrator`
+- `.local/skills/codex`
+- `.local/skills/workthrough`
 
 ### 마켓플레이스 추가
 
